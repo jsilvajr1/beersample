@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
 body {
-background-image: image-url("beer2.jpeg");
+background-image: image-url("beer5.jpeg");
 background-size: cover;
 background-position: center;
 background-attachment: fixed;
 line-height: 1.5;
-color: white;
+color: #42f4f1;
 }
 
 
@@ -20,4 +20,5 @@ color: white;
   background: black;
   background-color: rgba(0,0,0,0.6);
   border-radius: 40px;
+  font-size: 13pt;
 }
