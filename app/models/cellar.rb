@@ -1,0 +1,2 @@
+class Cellar < ApplicationRecord
+end

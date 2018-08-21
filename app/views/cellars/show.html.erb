@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Beer:</strong>
+  <%= @cellar.beer %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @cellar.description %>
+</p>
+
+<%= link_to 'Edit', edit_cellar_path(@cellar) %> |
+<%= link_to 'Back', cellars_path %>

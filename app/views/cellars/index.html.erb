@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cellars</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Beer</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cellars.each do |cellar| %>
+      <tr>
+        <td><%= cellar.beer %></td>
+        <td><%= cellar.description %></td>
+        <td><%= link_to 'Show', cellar %></td>
+        <td><%= link_to 'Edit', edit_cellar_path(cellar) %></td>
+        <td><%= link_to 'Destroy', cellar, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cellar', new_cellar_path %>
