@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Cellars</h1>
+<h1>My Cellar</h1>
 
 <table>
   <thead>
@@ -18,7 +18,7 @@
         <td><%= cellar.description %></td>
         <td><%= link_to 'Show', cellar %></td>
         <td><%= link_to 'Edit', edit_cellar_path(cellar) %></td>
-        <td><%= link_to 'Destroy', cellar, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', cellar, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Cellar', new_cellar_path %>
+<%= link_to 'New Beer', new_cellar_path %>
